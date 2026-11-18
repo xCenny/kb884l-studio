@@ -19,13 +19,17 @@ Temiz ilk açılışta otomatik aktarım ve Windows başlangıcı kapalıdır. A
 
 ## Ekranlar
 
+Önizlemeler hareketli GIF'tir: kayan yazı, oynatma göstergesi ve dönüşümlü düzenin Medya/Sistem geçişi görünür. Örnek CPU/RAM değerleri sabit aktarım değerleridir.
+
 | İkili Now Bar | Vitrin |
 |---|---|
-| ![](docs/images/dual.png) | ![](docs/images/artwork.png) |
+| ![](docs/images/dual.gif) | ![](docs/images/artwork.gif) |
 
 | Medya | Sistem |
 |---|---|
-| ![](docs/images/media.png) | ![](docs/images/system.png) |
+| ![](docs/images/media.gif) | ![](docs/images/system.gif) |
+
+![Medya ve Sistem arasında kayan geçiş](docs/images/carousel.gif)
 
 Görseller uygulamanın ürettiği önizlemelerdir; fiziksel cihaz fotoğrafı değildir. Galeride örnek müzik bilgisi ve kodla üretilmiş kapak kullanılır.
 

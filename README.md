@@ -44,17 +44,19 @@ Design your keyboard display with floating music cards, album colors, a clock an
 
 ## Screens and layouts
 
+Every preview below is an animated GIF from the actual renderer. Watch the title scroll, playback motion and the Carousel's music/system transition. Sample system values are fixed snapshots.
+
 | Dual | Artwork |
 |:---:|:---:|
-| ![Dual music and system layout](docs/images/dual.png) | ![Artwork layout](docs/images/artwork.png) |
+| ![Animated Dual music and system layout](docs/images/dual.gif) | ![Animated Artwork layout](docs/images/artwork.gif) |
 | Wallpaper, clock, system pills and music card. | Large cover, compact metadata and a status card. |
 
 | Media | System |
 |:---:|:---:|
-| ![Media layout](docs/images/media.png) | ![System layout](docs/images/system.png) |
+| ![Animated Media layout](docs/images/media.gif) | ![Animated System layout](docs/images/system.gif) |
 | A focused now-playing capsule. | CPU and RAM cards. |
 
-<p align="center"><img src="docs/images/carousel.png" alt="Carousel layout" width="480"><br><em>Carousel alternates between music and system cards in animated modes.</em></p>
+<p align="center"><img src="docs/images/carousel.gif" alt="Animated Carousel switching between music and system cards" width="480"><br><em>Carousel alternates between music and system cards in animated modes.</em></p>
 
 ## Get started
 

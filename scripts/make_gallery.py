@@ -1,6 +1,7 @@
 """Render synthetic README assets using the real display renderer. No USB/network."""
 from pathlib import Path
 import math
+import shutil
 import sys
 from PIL import Image, ImageDraw, ImageFont
 
@@ -35,10 +36,12 @@ def main():
                               'Ready for your next track', phase=.18, clock='17:42')
         cards[short] = image
         image.resize((640, 384), Image.Resampling.NEAREST).save(out/f'{short}.png')
-    frames, delays = render_nowbar_frames('nowbar_media', media, stats, 'cover',
-                        'STUDIO', mode='device_loop', frame_count=96, clock='17:42')
-    save_gif({'frames': [f.resize((480, 288), Image.Resampling.NEAREST) for f in frames],
-              'durations': delays}, out/'nowbar-loop.gif')
+        animated_media = {**media, 'title': 'Midnight Drive · After Hours Edition'}
+        frames, delays = render_nowbar_frames('nowbar_'+short, animated_media, stats, 'cover',
+                            'STUDIO', mode='device_loop', frame_count=96, clock='17:42')
+        save_gif({'frames': [f.resize((480, 288), Image.Resampling.NEAREST) for f in frames],
+                  'durations': delays}, out/f'{short}.gif')
+    shutil.copyfile(out/'media.gif', out/'nowbar-loop.gif')
     hero = Image.new('RGB', (1440, 840), '#0b1019')
     d = ImageDraw.Draw(hero)
     d.rounded_rectangle((40, 32, 1400, 808), radius=32, outline='#25374e', width=2)
