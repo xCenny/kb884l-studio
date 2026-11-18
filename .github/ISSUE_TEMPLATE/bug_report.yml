@@ -1,0 +1,23 @@
+name: Bug report
+description: Report a reproducible desktop or supported-keyboard issue.
+body:
+  - type: input
+    id: model
+    attributes:
+      label: Exact keyboard model and USB release descriptor
+      placeholder: KB884L-TUR / 0x0111
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Studio and Windows version
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps, expected behavior and actual behavior
+      description: Remove personal paths and media metadata from screenshots or logs.
+    validations:
+      required: true

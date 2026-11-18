@@ -1,0 +1,14 @@
+name: Feature or protocol research
+description: Suggest an improvement or share target-specific evidence.
+body:
+  - type: textarea
+    id: proposal
+    attributes:
+      label: User need and proposed behavior
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence or reference implementation
+      description: For hardware work, state exact model/revision and whether the behavior was physically verified.
